@@ -27,17 +27,17 @@ public class BookServiceImpl implements IBookService {
 
 	@Override
 	public Book getBookByTitle(String title) {
-		return bookRepo.findByTitle(title).orElseThrow(()->new BookNotFoundException("Boon not found"));
+		return bookRepo.findByTitle(title).orElseThrow(()->new BookNotFoundException("Book not found"));
 	}
 
 	@Override
 	public Book getBookByAuthor(String author) {
-		return bookRepo.findByAuthor(author).orElseThrow(()->new BookNotFoundException("Boon not found"));
+		return bookRepo.findByAuthor(author).orElseThrow(()->new BookNotFoundException("Book not found"));
 	}
 
 	@Override
 	public Book getBookByISBN(String isbn) {
-		return bookRepo.findByIsbn(isbn).orElseThrow(()->new BookNotFoundException("Boon not found"));
+		return bookRepo.findByIsbn(isbn).orElseThrow(()->new BookNotFoundException("Book not found"));
 	}
 
 }

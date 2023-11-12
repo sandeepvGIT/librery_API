@@ -1,6 +1,6 @@
-package com.myhcl.library.exception.response;
+package com.myhcl.library.payload.response;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.Data;
 public class ErorrMessage {
 	
 	private String errMsg;
-	private LocalDate date;
+	private Date date;
 	private Integer code;
 	private String status;
 	

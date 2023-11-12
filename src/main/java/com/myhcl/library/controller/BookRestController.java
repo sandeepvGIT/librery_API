@@ -32,7 +32,7 @@ public class BookRestController {
 		}
 		return response;
 	}
-	@GetMapping("/find/{title}")
+	@GetMapping("/find/title/{title}")
 	public ResponseEntity<Book> getBookByTitle(@PathVariable String title){
 		ResponseEntity<Book> response=null;
 		try {
@@ -44,7 +44,7 @@ public class BookRestController {
 		return response;
 		
 	}
-	@GetMapping("/find/{author}")
+	@GetMapping("/find/author/{author}")
 	public ResponseEntity<Book> getBookByAthor(@PathVariable String author){
 		ResponseEntity<Book> response=null;
 		try {
@@ -57,7 +57,7 @@ public class BookRestController {
 		
 	}
 	
-	@GetMapping("/find/{isbn}")
+	@GetMapping("/find/isbn/{isbn}")
 	public ResponseEntity<Book> getBookByISBN(@PathVariable String isbn){
 		ResponseEntity<Book> response=null;
 		try {
